@@ -37,13 +37,15 @@ pip install -r requirements.txt
 
 ## Train DSP-ACL
 ```bash
-python scripts/train.py --model dsp_acl --config configs/config.py
+# change the "MODEL_HEAD" value to "ATTENTION" in config.py before running the command below
+python scripts/train.py --config configs/config.py
 ```
 
 ## Train HA-MFF
 ```bash
 python scripts/generate_penalty_matrix.py
-python scripts/train.py --model ha_mff --config configs/config.py
+# change the "MODEL_HEAD" value to "CNN+ATTENTION" before running the command below
+python scripts/train.py --config configs/config.py
 ```
 
 ## Evaluate
@@ -64,7 +66,7 @@ python scripts/plot_attention.py
 ## Citation
 ```bibtex
 @thesis{liao2026patent,
-  title={Semantic Understanding Driven Multi-Label Classification for Chinese Patent Documents},
+  title={Research on Semantic Understanding-Driven Multi-Label Classification Algorithm for Chinese Patent Documents},
   author={Leyuan Liao},
   year={2026},
   school={Northeastern University at Qinhuangdao}

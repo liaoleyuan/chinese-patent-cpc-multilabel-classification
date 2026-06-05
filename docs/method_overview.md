@@ -1,8 +1,8 @@
 # Method Overview
 
-- 任务定义：G06F 领域 500 类 CPC 小组多标签分类。
-- 输入构造：`title + keywords + abstract`。
-- DSP-ACL：Chinese RoBERTa、Attention Pooling、ASL。
-- HA-MFF：在 DSP-ACL 上加入 TextCNN、Sibling Discount、HA-ASL。
-- 评价指标：HitRate@k、Micro-F1@5。
-- 模型目标：提升 Top-k 候选召回并改善同大组相似类别混淆。
+- **Task definition:** Extreme multi-label classification of **500 CPC sub-group labels** in the **G06F** domain for Chinese patent documents.
+- **Input formulation:** Concatenate `title + keywords + abstract` as the textual input.
+- **DSP-ACL:** Chinese RoBERTa with **attention pooling** and **Asymmetric Loss (ASL)**.
+- **HA-MFF:** Extends DSP-ACL by adding a **TextCNN** local-term channel, a **Sibling Discount** hierarchy-aware penalty matrix, and **hierarchy-aware ASL (HA-ASL)**.
+- **Evaluation metrics:** HitRate@k and Micro-F1@5.
+- **Model objective:** Improve **Top-k candidate recall** and reduce confusions among semantically similar labels within the same higher-level CPC group, while encouraging hierarchical consistency.

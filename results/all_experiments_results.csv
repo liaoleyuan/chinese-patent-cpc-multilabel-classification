@@ -1,0 +1,4 @@
+model,metric,value
+DSP-ACL,HitRate@10,84.99
+HA-MFF,HitRate@10,84.96
+HA-MFF,Micro-F1@5,33.59

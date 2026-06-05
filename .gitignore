@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+
+# model checkpoints and large weights
+output*/
+checkpoint*/
+best_model_final/
+*.safetensors
+*.bin
+*.pth
+optimizer.pt
+scheduler.pt
+trainer_state.json
+training_args.bin
+
+# large data
+data/train_120.csv
+data/val_fixed.csv
+data/test_fixed.csv
+fixed_v2_120/
+new_shards/
+*.npy
+
+# local files
+*.ttf
+*.vsix
+.DS_Store
+output.txt
+progress_done_files.json
+
+# allow hierarchy penalty matrix
+!artifacts/penalty_matrix.pt

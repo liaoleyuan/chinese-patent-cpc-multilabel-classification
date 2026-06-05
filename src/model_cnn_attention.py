@@ -1,0 +1,1 @@
+"""HA-MFF model placeholder."""
